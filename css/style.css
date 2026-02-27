@@ -1,0 +1,31 @@
+body {
+    background-color: #384D48;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+}
+
+#landingWrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#main {
+    grid-area: main;
+}
+
+#portrait {
+
+}
+
+
+
+#footer {
+    grid-area: footer;
+}
