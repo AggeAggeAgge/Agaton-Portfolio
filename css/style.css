@@ -1,15 +1,15 @@
 body {
     background-color: #384D48;
-    display: grid;
-    grid-template-areas:
-    "nav"
-    "main"
-    "footer";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #landingWrapper {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 #nav {
