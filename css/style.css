@@ -1,31 +1,56 @@
 body {
     background-color: #384D48;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 #landingWrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-areas:
+    "nav",
+    "main"
+    ;
+    margin-left: 20%;
+    margin-right: 20%;
+
     
 }
 
-#nav {
-    grid-area: nav;
+.nav {
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: "Logo NavButton";
+    justify-content: space-between;
+
+}
+
+#Logo {
+    grid-area: Logo;
+}
+
+#navButton {
+    grid-area: NavButton;
 }
 
 #main {
-    grid-area: main;
+    background-color:aquamarine;
+
 }
 
 #portrait {
+    background-color: palevioletred;
 
 }
 
 
 
 #footer {
-    grid-area: footer;
+    background-color: greenyellow;
+}
+
+
+@media screen and (max-width:500px) {
+    #landingWrapper {
+        margin: 0;
+    }
 }
