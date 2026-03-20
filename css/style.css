@@ -1,23 +1,36 @@
+:root {
+    --bg_color: #384D48
+}
+
+
+
+.noto-sans {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
 body {
-    background-color: #384D48;
+    background-color: var(--bg_color);
     display: grid;
 }
 
 #landingWrapper {
     display: grid;
-    background-color: antiquewhite;
     grid-template-areas:
     "nav",
-    "main"
-    ;
-    margin-left: 20%;
-    margin-right: 20%;
+    "main";
+    margin-left: 0%;
+    margin-right: 0%;
 
     
 }
 
 .nav {
-    background-color: aqua;
     display: grid;
     grid-template-areas: "Logo NavButton";
     justify-content: space-between;
@@ -33,24 +46,44 @@ body {
 }
 
 #main {
-    background-color:aquamarine;
 
 }
 
 #portrait {
-    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about {
+    border-left: 7px solid pink;
+    padding-left: 10px;
+}
 
 #footer {
-    background-color: greenyellow;
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:750px) {
     #landingWrapper {
-        margin: 0;
+        margin-left: 20%;
+        margin-right: 20%;
+
     }
 }
