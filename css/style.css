@@ -15,7 +15,10 @@
 
 
 body {
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 25%),
+                linear-gradient(180deg, var(--bg_color) 0%, #4c6d67 45%, #1e2f2a 100%);
     background-color: var(--bg_color);
+    min-height: 100vh;
     display: grid;
 }
 
@@ -76,11 +79,14 @@ body {
     display: grid;
     grid-template-areas: "Logo NavButton";
     justify-content: space-between;
+    height: 25%;
+    object-fit: scale-down;
 
 }
 
 #Logo {
     grid-area: Logo;
+    object-fit: scale-down;
 }
 
 #navButton {
