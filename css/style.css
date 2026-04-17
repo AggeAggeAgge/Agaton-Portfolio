@@ -15,8 +15,8 @@
 
 
 body {
-    background: radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 25%),
-                linear-gradient(180deg, var(--bg_color) 0%, #4c6d67 45%, #1e2f2a 100%);
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.214), transparent 25%),
+                linear-gradient(180deg, var(--bg_color) 0%, #3f5b56 45%, #5d726b 100%);
     background-color: var(--bg_color);
     min-height: 100vh;
     display: grid;
@@ -87,6 +87,11 @@ body {
 #Logo {
     grid-area: Logo;
     object-fit: scale-down;
+    width: 10px;
+}
+
+#LogoPicture {
+    width: 120px;    
 }
 
 #navButton {
@@ -122,6 +127,7 @@ body {
 #about {
     border-left: 7px solid pink;
     padding-left: 10px;
+    
 }
 
 #footer {
