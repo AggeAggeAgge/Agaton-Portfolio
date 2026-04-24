@@ -127,7 +127,8 @@ body {
 #about {
     border-left: 7px solid pink;
     padding-left: 10px;
-    
+    background-color:#78908850;
+    border-radius: 7px;
 }
 
 #footer {
