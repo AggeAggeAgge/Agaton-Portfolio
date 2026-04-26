@@ -1,12 +1,11 @@
 :root {
-    --bg_color: #384D48
+    --bg_color: #4da792
 }
 
 
 
 .noto-sans {
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
@@ -16,7 +15,7 @@
 
 body {
     background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.214), transparent 25%),
-                linear-gradient(180deg, var(--bg_color) 0%, #3f5b56 45%, #5d726b 100%);
+                linear-gradient(180deg, var(--bg_color) 0%, #3f5b56 45%, #206850 100%);
     background-color: var(--bg_color);
     min-height: 100vh;
     display: grid;
@@ -25,7 +24,7 @@ body {
 #landingWrapper {
     display: grid;
     grid-template-areas:
-    "nav",
+    "nav"
     "main";
     margin-left: 0%;
     margin-right: 0%;
